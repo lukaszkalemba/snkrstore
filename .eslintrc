@@ -6,10 +6,24 @@
     "airbnb-typescript",
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:testing-library/recommended",
+    "plugin:jest-dom/recommended",
     "prettier",
     "prettier/react"
   ],
+  "env": {
+    "jest": true
+  },
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    }
+  ],
   "rules": {
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "react/react-in-jsx-scope": 0,
     "react/jsx-props-no-spreading": 0,
     "import/prefer-default-export": 0
