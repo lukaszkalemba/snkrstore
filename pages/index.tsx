@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Heading from 'components/Heading/Heading';
 
 const Home = () => {
   return (
@@ -7,7 +8,8 @@ const Home = () => {
         <title>SNKRSTORE</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>pages/index.tsx</h1>
+
+      <Heading />
     </div>
   );
 };
