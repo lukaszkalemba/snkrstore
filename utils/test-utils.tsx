@@ -1,9 +1,11 @@
 import { FC, ReactNode, ReactElement, ComponentType } from 'react';
 import { render } from '@testing-library/react';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './theme';
 import '@testing-library/jest-dom';
 
 const AllProviders: FC<AllProvidersProps> = ({ children }) => {
-  return <div>{children}</div>;
+  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 };
 
 interface AllProvidersProps {
