@@ -7,7 +7,23 @@ declare module 'styled-components' {
       dark: string;
       white: string;
     };
-    fonts: {};
+    fonts: {
+      size: {
+        xs: string;
+        s: string;
+        m: string;
+        l: string;
+        xl: string;
+        xxl: string;
+      };
+      weight: {
+        regular: number;
+        semiBold: number;
+      };
+      family: {
+        primary: string;
+      };
+    };
     media: {
       custom: (width: number) => string;
       phone: string;
