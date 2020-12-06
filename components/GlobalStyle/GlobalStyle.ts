@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-size: 1.6rem;
-    font-family: sans-serif;
+    font-family: ${({ theme }) => theme.fonts.family.primary}, sans-serif;
     color: ${({ theme }) => theme.colors.light};
     background-color: ${({ theme }) => theme.colors.dark};
   }
